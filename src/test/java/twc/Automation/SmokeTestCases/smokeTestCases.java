@@ -435,6 +435,7 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 							System.out.println("================= Verifying hourly_detailpage_adcall_iu test case  Started =========================");
 							proxy.clearCharlesSession();
 						   AppFunctions.click_hourly_element();
+						   attachScreen();
 						   Thread.sleep(10000);
 							AppFunctions.Swipe();
 							AppFunctions.Swipe();
@@ -442,6 +443,8 @@ public class smokeTestCases extends  TwcAndroidBaseTest {
 							AppFunctions.Swipe();
 							AppFunctions.Swipe();
 							AppFunctions.Swipe();
+							Thread.sleep(10000);
+							Thread.sleep(10000);
 							this.proxy.getXml();
 						CharlesFunctions.createXMLFileForCharlesSessionFile();
 				          Utils.verifyPubadCal("Smoke", "Hourly");
@@ -578,9 +581,9 @@ public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Excepti
 	System.out.println(
 			"================= Verifying new daily details day1 ad call tescase Started =========================");
 	
-	proxy.clearCharlesSession();
-	
+	proxy.clearCharlesSession();	
 	Functions.clickdailydetails();
+	attachScreen();
 	//Functions.closeInterstailads();
 //	Functions.clickongotit();
 	Thread.sleep(15000);
@@ -625,6 +628,7 @@ System.out.println(
 CharlesFunctions.archive_folder("Charles");
 proxy.clearCharlesSession();
 Functions.clickonday2();
+attachScreen();
 Thread.sleep(10000);
 Functions.verifyingdailydetrailsday1today7();
 this.proxy.getXml();
@@ -669,6 +673,7 @@ CharlesFunctions.archive_folder("Charles");
 proxy.clearCharlesSession();
 //Functions.finding_newDailyBidadcall_day2();
 Functions.clickonday3();
+attachScreen();
 Thread.sleep(10000);
 Functions.verifyingdailydetrailsday1today7();
 this.proxy.getXml();
@@ -711,6 +716,7 @@ proxy.clearCharlesSession();
 //Functions.finding_newDailyBidadcall_day2();
 Functions.clickonday4();
 Thread.sleep(10000);
+attachScreen();
 Functions.verifyingdailydetrailsday1today7();
 this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -753,6 +759,7 @@ proxy.clearCharlesSession();
 //Functions.finding_newDailyBidadcall_day2();
 Functions.clickonday5();
 Thread.sleep(10000);
+attachScreen();
 Functions.verifyingdailydetrailsday1today7();
 this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -795,6 +802,7 @@ public void Smoke_Test_Verifying_newdailydetails_day6adcall_FTL() throws Excepti
 //	Functions.finding_newDailyBidadcall_day2();
 	Functions.clickonday6();
 	Thread.sleep(10000);
+	attachScreen();
 	Functions.verifyingdailydetrailsday1today7();
 	this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -838,6 +846,7 @@ public void Smoke_Test_Verifying_newdailydetails_day7adcall_FTL() throws Excepti
 //	Functions.finding_newDailyBidadcall_day2();
 	Functions.clickonday7();
 	Thread.sleep(10000);
+	attachScreen();
 	Functions.verifyingdailydetrailsday1today7();
 	this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -878,6 +887,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 			proxy.clearCharlesSession();
 			//Functions.finding_newDailyBidadcall_day2();
 			Functions.clickonday8();
+			attachScreen();
 			Thread.sleep(10000);
 			Functions.verifyingdailydetrailsday8today14();
 			this.proxy.getXml();
@@ -921,6 +931,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 				//Functions.finding_newDailyBidadcall_day2();
 				Functions.clickonday9();
 				Thread.sleep(10000);
+				attachScreen();
 				Functions.verifyingdailydetrailsday8today14();
 				this.proxy.getXml();
 			CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -961,6 +972,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 		//	Functions.finding_newDailyBidadcall_day2();
 			Functions.clickonday10();
 			Thread.sleep(10000);
+			attachScreen();
 			Functions.verifyingdailydetrailsday8today14();
 			this.proxy.getXml();
 		CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -1005,6 +1017,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 				//Functions.finding_newDailyBidadcall_day2();
 				Functions.clickonday11();
 				Thread.sleep(10000);
+				attachScreen();
 				Functions.verifyingdailydetrailsday8today14();
 				this.proxy.getXml();
 			CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -1046,6 +1059,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 			//	Functions.finding_newDailyBidadcall_day2();
 				Functions.clickonday12();
 				Thread.sleep(10000);
+				attachScreen();
 				Functions.verifyingdailydetrailsday8today14();
 				this.proxy.getXml();
 			CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -1089,6 +1103,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 	//	Functions.finding_newDailyBidadcall_day2();
 		Functions.clickonday13();
 		Thread.sleep(10000);
+		attachScreen();
 		Functions.verifyingdailydetrailsday8today14();
 		this.proxy.getXml();
 	CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -1129,6 +1144,7 @@ public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 	//	Functions.finding_newDailyBidadcall_day2();
 		Functions.clickonday14();
 		Thread.sleep(10000);
+		attachScreen();
 		Functions.verifyingdailydetrailsday8today14();
 		this.proxy.getXml();
 	CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -1169,6 +1185,7 @@ public void Smoke_Test_Verifying_newdailydetails_day15adcall_FTL() throws Except
 //	Functions.finding_newDailyBidadcall_day2();
 	Functions.clickonday15();
 	Thread.sleep(10000);
+	attachScreen();
 	Functions.verifyingdailydetrailsday15();
 	this.proxy.getXml();
 CharlesFunctions.createXMLFileForCharlesSessionFile();
@@ -1198,6 +1215,7 @@ public void Smoke_Test_sz_Verifying_newdailydetails_day15adcall_FTL() throws Exc
 	System.out.println(
 			"=================  Verifying sz value for new daily details day15 ad call tescase  End =========================");
 }
+
 
 
 	
