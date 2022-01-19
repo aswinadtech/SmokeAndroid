@@ -437,7 +437,7 @@ public class AppiumFunctions extends Drivers{
      					capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
      					//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
      					
-     					Thread.sleep(5000);
+     					Thread.sleep(10000);
      				
      					Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
      					Thread.sleep(15000);
@@ -445,10 +445,15 @@ public class AppiumFunctions extends Drivers{
      					/* ---End Android Device Capabilities --- */
      	    			Ad.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
      	    			//####added ths to handle allow button			
+     	    			attachScreen();
      	    			clickONNext();
+     	    			attachScreen();
      	    		    ClickonIUnderstand();
+     	    		   attachScreen();
      	        		clickOnAllow();		
+     	        		attachScreen();
      	        		Clickonclosebutton();
+     	        		attachScreen();
      	    			Thread.sleep(10000);
      	    			System.out.println("Capabilities have been launched  with fullreset ");
      				}
@@ -877,6 +882,7 @@ int swipeup = Counter;
 System.out.println("Scroll the app till"+ data[1][1] +" is displaying on the screen");
 Thread.sleep(5000);
 clickonAlertsCenter();
+attachScreen();
 AppiumFunctions.clickOnBackArrowElement();
 
 for(int i=1;i<=swipeup ;i++){
@@ -934,6 +940,7 @@ if(ModuleName.toString().contains("Maps") ||ModuleName.toString().contains("Thun
 if(radarCount==0)
 {
 AppiumFunctions.clickOnRadarMaps();
+attachScreen();
 AppiumFunctions.clickOnBackArrowElement();
 //Functions.closeInterstailads();
 radarCount=1;
@@ -943,6 +950,7 @@ radarCount=1;
 if(ModuleName.toString().contains("Today's Details") ) {
 if(TodayDeatilsCount==0) {
 AppiumFunctions.click_Todaydetails_element();
+attachScreen();
  AppiumFunctions.clickOnBackArrowElement_today();
  Thread.sleep(10000);
  TodayDeatilsCount=1;
@@ -952,6 +960,7 @@ AppiumFunctions.click_Todaydetails_element();
 if(ModuleName.toString().contains("Air Quality")) {
 if(AirQualityCount==0) {
 AppiumFunctions.click_Airpollution_element();
+attachScreen();
 AppiumFunctions.clickOnBackArrowElement();
 Thread.sleep(10000);
 AirQualityCount=1;
@@ -961,6 +970,7 @@ AirQualityCount=1;
 if(ModuleName.toString().contains("Outdoor Conditions")) {
 if( outdoorcount==0)
 click_SH_element() ;
+attachScreen();
 AppiumFunctions.clickOnBackArrowElement();
 Thread.sleep(10000);
 outdoorcount=1;
@@ -970,6 +980,7 @@ outdoorcount=1;
 if(ModuleName.toString().contains("More News")) {
 if( MorNewsCount==0)
 click_MoreNews_element();
+attachScreen();
 AppiumFunctions.clickOnBackArrowElement();
 Thread.sleep(10000);
 MorNewsCount=1;
