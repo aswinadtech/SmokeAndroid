@@ -2354,17 +2354,21 @@ public static void gettingApkVersion() throws Exception{
 		//cliking View more Button	
 	try {
      	clickOnviewMore();
+     	attachScreen();
 	}
 	catch(Exception e) {
 	 	clickOnviewMore();
+	 	attachScreen();
 	}
 	try {
      	//cliking on aboutthisapp
      	clickOnAboutthisapp();
+     	attachScreen();
 	}
 	catch(Exception e) {
 		//cliking on aboutthisapp
      	clickOnAboutthisapp();
+     	attachScreen();
 	}
 	try {
      	apkVersion=Ad.findElementById("com.weather.Weather:id/about_version").getText();
